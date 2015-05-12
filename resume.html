@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Philip Cadigan</title>
+	<meta name="author" content="Philip Cadigan">
+	<link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
+	<!--
+
+		INTRO:
+			I started to write this resume in HTML bc I figured it was 2012 and a Word
+			doc seems horribly out of date.  One of the goals in the re-write was to make
+			it portable across a host of devices (phones, tablets, PCs).  This goal is still
+			a work in progress.  Those looking to see this resume as a portfolio may be
+			disappointed.  It's an attempt to get a widely usable, no-script document
+			(mail clients don't like that js) that catalogs my work, not a sparkling
+			piece of that work itself.
+
+		TODO:
+			implement comic-sans mode
+			port to JSFiddle
+
+	Shaun the sheep:
+
+        ..........................IMMMN?.......................... .....
+        ...........      ... ..IDDDMMNDMNZ7..  ...              ........
+        ...........      ....=8D$..,,++=,..8M. ...              ........
+     ...........          ..8DD+=+++=~~~~??I?M...............   ........
+     ...........         ..?NZ?==~~~:~~~:~~=+ZM..............   ........
+     ...   ..            ..MO=++~~~~~~~:~~~~=?M ...:$88$,....   ........
+     ........    . ....... M+=~===++?????+++??Z:M8DD8DNNDOO=............
+  .......... .......=$88Z~,MZ77I??8OO8OOO8O$??8DII7ZDNNNND8OZ  .........
+  ..............,:O8DDNII?D8M88O8ZOOOZO8OZO8MDDDIII7$NNMND8D8$..........
+  .............,7ZDNMM87I?D8DNM8?~?ON$OM:OOOMNDD??I77DMMDDDD88. ........
+  .............$8NMMMM$7?IDDDNN8MN,=~+M=~~O8MNDD??I7I7.,::...... .......
+  .............8DNMMMM$7II8DNM8~:~:ID=~~~OO8DNN87I77I?. ..  ..   .......
+     ........,.DDMMMMM7$7IODNMOOI$OZOOOOOZZODMMN87$$7+. ....     .......
+     ..........,... ..:$7I$DNMOOZZZOOOOOOZZOODMNM$$ZZI,:= ...    .......
+     ..............=$~,Z77$NMN8OOZZZOOOOOZZZO8NMN8OOOODOO8M..... .......
+     ........   ..OZ8ONDZ$ZNMD8OOOOOOOOOOOZZO8DMNMDDZOODOOO~.... .......
+      ...........=8ZDDO88NNNM88OOOOOO8OOOO$ZO8DD,,ZOO88OOZOO...  .......
+      ...... ....8O8OO888O,~?D8OOOO88888888O88DN~IZ88888888O.........
+      ...... ....DOO888888DN:N8ON88O88888DN88888+$88888888OOO.  ........
+      ........  ,88888888DDM.M88N8O8888888888888I+=DOO8D888OZD... ........
+      ........ :ZO8888888D$.$IO88O8O88888888888$II++~..~M888OZD......   ..
+      ..... ...8OO88DZ.....+IIZ8OO88888OOOOOOOZ77I88N:...IOO8OZD..........
+      ........DO8888......Z7III?OOOOOO8OOOOOO77II7ZNDDDM,.,O8D8OO.........
+      .......?OO888?...,M8$IIII?I+IZZZZZZZ7I7I??II?ZNNNNDDM888888?.........
+      ...... DO8888.,$DDNM7I?II=~====?I?=====+++???+ONNNND88O88O8I......
+      .......88888OD8DNMNNIIII+=~~~~~~:~~~~~~===+?+++,N88888OOOO8,......
+      .......?O8O8O8DDDDDZ??+~=~~~::~:::~~:::~===++++:...7OZZOZ8.. .....
+      ........=OO8O8888Z.,?+==~~:~:::::::::::~~~~=+++=.......... .......
+      ......... +88$:.....?+~:~~~~:::~:::::::~:~~=====.   ......   .......
+      .......   ..........==~~:::~::::~:::::::::~~~===.   ......   .......
+      .......    . .  . ..==~~:::::::::~::::::::~~~~~~.            .......
+      .......   ....... ..~~~~~::::::::~::::,::~~::~~:.            .......
+      .......         . . ~:::~::::::::~::::::::::::~~.            .......
+      ......          . ..::::~:::::::~::::::::~::::~:.            .......
+      ......          . ..:::::~::::::::::::::::::::::.            .......
+      ..   .            ..:~:::::::::::~::~:::::~:::::.            .......
+      ......            ..:::~::::::::::::::::::::::~:.            .......
+      .......           ..:::~:::::::::::::::::::~:::,.            ......
+      .......           ..::::~~::::::,::::::::::::::,.            ......
+  ..........             .::::::::::::::~::::::::::::..            .......
+     .......              .:~:::::~~::~~::::::::::::~..            .......
+     .......             . ~:::::::::::::::::::::::::..            .......
+  ...........            ..:::::::::::::::::~:::::~::..            .......
+  ...........             ..~::::::::::::~~~~:::::::: .            .......
+     ........              ..~~~~:::::~::~:~:::::::~..             .......
+     ........              ...~~:~~~~:~~:::~~~~~:~:...             .......
+      .......              ...$OO~~=~~~~~~~~~====~~~. .            .......
+      .......              ...8O8ON.:~==++$I$Z$~~~~~:.             .......
+      .......              ...~:~~=..,,,,.~~~~~...,......................
+
+	-->
+
+	<style type="text/css">
+		/* reset styles */
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, font, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td {
+		  margin: 0;
+		  padding: 0;
+		  border: 0;
+		  outline: 0;
+		  font-weight: inherit;
+		  font-style: inherit;
+		  font-size: 100%;
+		  font-family: inherit;
+		  vertical-align: baseline; }
+
+		body {
+		  line-height: 1;
+		  color: black;
+		  background: white; }
+
+		table {
+		  border-collapse: separate;
+		  border-spacing: 0;
+		  vertical-align: middle; }
+
+		caption, th, td {
+		  text-align: left;
+		  font-weight: normal;
+		  vertical-align: middle; }
+
+		q, blockquote {
+		  quotes: "" ""; }
+		  q:before, q:after, blockquote:before, blockquote:after {
+		    content: ""; }
+
+		a img {
+		  border: none; }
+
+	/* custom-page styles */
+
+	body, html{
+		background: #f7f7f7;
+		font-family:"HelveticaNeue", "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+	 h1, h2, h3, h4, h5, h6{
+		font-family: 'Sanchez', serif;
+	}
+	h1{
+		font-size:18px;
+	}
+	h2, h3{
+		font-size:14px;
+		color: #555;
+	}
+	p, ul, li{
+		font-size:13px;
+		line-height:18px;
+	}
+
+	/* classes */
+
+	.contact-content{
+	    float: right;
+	    font-size: 12px;
+	    margin-top: 5px;
+
+	}
+	.contact-link {
+		text-decoration:none;
+		color:inherit;
+	}
+	.container {
+		width: 60%;
+		max-width:700px;
+		min-width:320px;
+		margin:0px auto;
+	}
+	.content {
+		padding-left:20px;
+		padding-right:20px;
+		position: relative;
+		top: 0;
+		background:#fff;
+	}
+	.content-section{
+		margin-bottom: 10px;
+	}
+	.cv-content{
+		margin-top:30px;
+	}
+	.footer-content{
+		margin-top:30px;
+		font-size:9px;
+		color:#333;
+	}
+	.personal-content {
+		height: 30px;
+		background: #f7f7f7;
+		left: 0;
+	    position: fixed;
+	    right: 0;
+	    z-index: 10;
+		box-shadow: 0 0 5px #888888;
+		color: #053359;
+	}
+	.personal-name{
+		margin-top: 12px;
+	}
+
+	.position{
+		padding-bottom:10px;
+	}
+	.position-link {
+		color:#CCCCCC;
+		text-decoration:none;
+		opacity:0;
+		transition: opacity 2s;
+	}
+	.section-heading{
+		border-bottom:1px solid #ddd;
+		padding: 20px 0 0;
+		margin-bottom: 10px;
+		color:#AAAAAA;
+	}
+	.skills {
+		list-style-type:none;
+		margin:0px;
+	}
+	.skills li{
+		background: none repeat scroll 0 0 #eee;
+	    border-radius: 5px 5px 5px 5px;
+	    display: inline-block;
+	    padding: 3px 5px;
+		margin-bottom:5px;
+	}
+	.upgrade-message{
+		position:fixed;
+		background: red;
+		color:white;
+		padding:10px;
+	}
+	.warning-message{
+		background:orange;
+		padding:10px;
+		text-align:center;
+	}
+	.work-achievements{
+		margin-left: 20px;
+	}
+	.work-company a{
+		text-decoration:none;
+		color:#333;
+	}
+	.work-company:hover .position-link{
+		opacity:1;
+	}
+	.work-description{
+		font-size: 12px;
+		margin: 10px 0;
+	}
+	.work-duration{
+
+	}
+	.work-content{
+		color:#333333;
+	}
+
+	/* CSS3 Rules for small screens */
+
+	@media (max-width: 700px) {
+		.container{
+			width:100%;
+			max-width:none;
+			min-width:none;
+		}
+
+	}
+
+
+	/* print styles */
+	@media print {
+		body,
+		html,
+		.personal-content {
+		    width: 100%;
+			background:#fff;
+		}
+
+		h2, h3,
+		.section-heading{
+			color:#000;
+		}
+		.contact-content{
+			display: block;
+			font-size: 12px;
+			float:none;
+		}
+		.container {
+			width:100%;
+			max-width: none;
+		}
+		.personal-content{
+			box-shadow: none;
+			position:relative;
+		}
+	}
+	</style>
+</head>
+<body>
+	<!--[if lte IE 7]>
+        <p class="upgrade-message">You are using an <strong>older</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+	<div class="container">
+		<div class="content personal-content">
+			<div class="container">
+				<h1 class="personal-name">Philip Cadigan
+					<span class="contact-content"><a class="contact-link personal-phone" href="tel:+16174290779">617.429.0779</a> / <a class="contact-link personal-email" href="mailto:phil@inkhorn.org">phil@inkhorn.org</a> / <a class="contact-link" href="https://twitter.com/pcad">@pcad</a></span>
+
+					</h1>
+			</div>
+		</div>
+
+		<div class="content cv-content">
+			<div class="content-section">
+				<h2 class="section-heading">Summary</h2>
+				<p class="summary-description">I'm a software developer who loves to prototype, code, and release.  I've tried at every stage of my career to dive into the subject at hand.  For the past 10+ years that subject has been programming in the browser.</p>
+			</div>
+
+			<div class="content-section">
+				<h2 class="section-heading">Technical Skills</h2>
+				<ul class="skills">
+					<li>JavaScript</li>
+					<li>CSS</li>
+					<li>HTML</li>
+					<li>Java</li>
+					<li>Python</li>
+					<li>Performance Analysis</li>
+					<li>PostgreSQL</li>
+					<li>MySQL</li>
+					<li>Solr/Lucene</li>
+					<li>*NIX</li>
+					<li>HTTP(S)?</li>
+					<li>VCS</li>
+				</ul>
+			</div>
+
+			<div class="work-content content-section">
+				<h2 class="section-heading">Work Experience</h2>
+
+				<div class="position">
+				<h3 class="work-title">Engineering Interface Manager</h3>
+				<aside>
+					<p class="work-company"><a href="http://lifeimage.com/" target="_blank">lifeIMAGE <span class="position-link">http://lifeimage.com</span></a></p>
+					<p class="work-duration">June 2014 - Present</p>
+				</aside>
+					<p class="work-description">Player/coach for the UI team.</p>
+				<ul class="work-achievements">
+					<li>Work with executive, managerial, and individual contributors to craft professional interfaces.</li>
+					<li>Serve the UI team to make sure projects run smoothly and employee happiness is a front and center focus.</li>
+					<li>Regularly meet with direct reports to identify upcoming challenges and address on-going work.</li>
+					<li>Coordinate with stakeholders outside of engineering to insure that issues are recognized and goals are met.</li>
+					<li>Champion efforts to improve software quality; including process discussion, automated testing, and improved documentation.</li>
+					<li>Listen.</li>
+					<li>Present responsibilities include the continuation of responsibilities as <a href="#softwareEngineerUI">Software Engineer</a></li>
+				</ul>
+				</div>
+
+			  <div class="position">
+				<h3 class="work-title" id="softwareEngineerUI">Software Engineer, UI</h3>
+				<aside>
+					<p class="work-company"><a href="http://lifeimage.com/" target="_blank">lifeIMAGE <span class="position-link">http://lifeimage.com</span></a></p>
+					<p class="work-duration">April 2009 - May 2014</p>
+				</aside>
+			    <p class="work-description">UI lead for multiple web-applications that aid the secure sharing of medical imaging.</p>
+				<ul class="work-achievements">
+					<li>Design, build, and service single page web-apps using progressive methodologies (<a href="https://github.com/cujojs/curl">AMD</a>, <a href="https://github.com/cujojs/wire">Dependency Injection</a>, <a href="http://wiki.commonjs.org/wiki/Promises/A">Promises</a>, Comet, etc.) while still supporting legacy browsers.</li>
+					<li>Work closely with Product Management and Quality Assurance to produce a final product that meets or exceeds users needs.</li>
+					<li>Design and develop REST APIs that serve multiple client platforms (HTML/JS, .NET, iOS).</li>
+					<li>Implement stringent security requirements that enable the proper sharing of medical data.</li>
+					<li>Analyze performance metrics across multiple browser platforms; identifying areas for optimization and refactoring.</li>
+					<li>Integrate web-apps with native frameworks (.NET and Cocoa) and plugins (Java and Flash) to extend the capabilities of our applications as needed.</li>
+					<li>Create and maintain build processes (Ant and Maven) to produce <a href="https://developers.google.com/closure/compiler/">optimized JavaScript</a> and Flash artifacts.</li>
+					<li>Implement <a href="http://docs.seleniumhq.org/">automated testing</a> in conjunction with continuous integration.</li>
+					<li>Develop in-house tools that aid software engineering in the areas of performance and automation.</li>
+					<li>Develop UI test-harnesses to aid a rapid "code and test" cycle.</li>
+					<li>Perform the duties of scrum master, rescue stuck/blocked colleagues, and ensure the timely delivery of software.</li>
+					<li>Interview candidates for technical and cultural fits within the organization.</li>
+					<li>Bring up to speed junior and senior candidates on concepts and frameworks used in the UI.</li>
+					<li>Investigate and implement unit testing frameworks (<a href="http://docs.busterjs.org/en/latest/">buster.js</a> and <a href="http://jsunit.berlios.de/">jsUnit</a>) to exercise client code.</li>
+					<li>Keep up-to-date with industry trends and try to incorporate them wherever they make sense.</li>
+				</ul>
+			  </div>
+
+			<div class="position">
+				<h3 class="work-title">Software Engineer</h3>
+				<aside>
+					<p class="work-company"><a href="http://lycos.com/" target="_blank">Lycos Inc. <span class="position-link">http://lycos.com/</span></a></p>
+					<p class="work-duration">July 2007 to February 2009</p>
+				</aside>
+			    <p class="work-description">Member of an agile web-development team tasked with creating new products utilizing emerging technologies. Participated in multiple phases of the software life cycle, including: brainstorming, requirements gathering, prototyping, development, usability, marketing, and usage analysis.</p>
+				<ul class="work-achievements">
+					<li>Designed and wrote extensive back-end and front-end code for Lycos Cinema, a web application that allows users to synchronously watch videos and chat from within their browser.  Worked closely with product management and design team to identify and fix usability issues.
+					<li>Successfully led programming team in a complete refactor of an internal RESTful web-service.  This project consisted of overhauling tens of thousands of lines of back-end code, made heavy use of automated testing, and provided a clear and consistent interface for consumers of the data.
+					<li>Implemented scalable AJAX front-end for Lycos MIX, a site that allows users to build video playlists.
+					<li>Refactored existing web-scraping scripts for Lycos MIX into an easily extensible API, allowing new video providers to be dropped into place with zero configuration.
+					<li>Designed and implemented memcached-based caching system for Lycos Cinema, providing service and statistical monitoring, and transparent invalidation mechanisms.
+					<li>Interviewed and mentored graduate students in the Lycos Internship Program.
+					<li>Participated in training emphasizing: communication, team building, conflict resolution, and innovation.
+					<li>Performed front-end performance audits for Lycos properties.
+					<li>Lead developer for a complete overhaul of Sparkcast, a peer-to-peer video broadcasting service.
+					Sparkcast utilized a unique infrastructure designed to service both desktop and web-based clients.  Portions of the service were written in C, Java, and PHP.
+					<li>Architected testing framework for Lycos Cinema emphasizing: unit, integration, and automated browser testing.
+					<li>Led weekly engineering meeting.  This meeting was the main forum for: redressing recurring technical issues, formulating standards for code quality, and evaluating new technologies.
+					<li>Received the runner-up prize in the Lycos Innovation Challenge for 'Bubblr' a collaborative RSS
+					aggregator.
+				</ul>
+			  </div>
+
+			<div class="position">
+				<h3 class="work-title">Co-Founder and Lead Developer</h3>
+				<aside>
+					<p class="work-company">PbType LLC </p>
+					<p class="work-duration">April 2005 to May 2007.</p>
+				</aside>
+			    <p class="work-description">Co-created a web-consultancy and development company specializing in standards compliant web development.  As co-founder I was intimately involved in all aspects of the business from strategic thinking to procuring office supplies.</p>
+				<ul class="work-achievements">
+					<li>Led programming on all major projects.  Managed programming life cycle, including but not limited to:
+					design, prototyping, development, testing, and implementation.
+					<li>Managed and developed client relationships, including: needs assessment, project estimation, updates, acceptance testing, and post-delivery wrap-up.
+					<li>Created and coordinated marketing efforts for the company including: press releases, blog, printed materials, and take-aways.
+					<li>Coordinated legal negotiations for company including incorporation, intellectual property arrangements, and contracts.
+					<li>Designed, planned, and implemented rPapers.  rPapers was a Django-based web 2.0 service offering tools to help people share their research.
+					<li>Implemented version control system (Subversion) and bug tracking database (Trac) to keep code-base manageable across multiple developers and environments.
+					<li>Researched and maintained knowledge of relevant emerging technologies.
+					<li>Provided clients with advice and code to enhance search engine rankings.
+					<li>Implemented ratified standards and APIs to increase data portability and interoperability.
+				</ul>
+			  </div>
+
+			<div class="position">
+				<h3 class="work-title">Journals Internet Marketing Manager</h3>
+				<aside>
+					<p class="work-company"><a href="http://mitpress.mit.edu/" target="_blank">The MIT Press <span class="position-link">http://mitpress.mit.edu/</span></a></p>
+					<p class="work-duration">April 2001 to April 2005</p>
+				</aside>
+			    <p class="work-description"></p>
+				<ul class="work-achievements">
+					<li>Co-managed a high traffic web-catalog receiving 130,000 unique visits per month.
+					<li>Led a complete rewrite and redesign of the web-catalog, coordinating a team of freelance designers, programmers, and in-house committees.
+					<li>Created and implemented ongoing development projects (e.g., e-mail lists, stats, discounts) to enhance and ensure the quality and currency of our web-catalog.
+					<li>Oversaw web-production schedule for 35 journals; including timely and accurate publication of new content, posting sample articles, verifying properly editorial information, and pricing.
+					<li>Fostered reader involvement through increased access, e-mail alerts, sample articles, and letters-to-the-editor module.
+					<li>Deployed strategies for e-journals.  Coordinated with in-house design team, editors, programmers, and customer service on conceptual development, infrastructure, and policy.
+					<li>Served as primary contact with electronic publishing vendors, ensured operational efficiency and increased relevancy of services.
+					<li>Implemented with IT: hardware upgrades, disaster recovery, and security and network policies.
+					<li>Member of the Management Board Task Force for Digital Strategies.
+					<li>Recipient of the MIT Press 2001 Award for Efficiency and Cost Savings.
+				</ul>
+			  </div>
+
+			<div class="position">
+				<h3 class="work-title">Journals Promotion Coordinator</h3>
+				<aside>
+					<p class="work-company"><a href="http://mitpress.mit.edu/" target="_blank">The MIT Press <span class="position-link">http://mitpress.mit.edu/</span></a></p>
+					<p class="work-duration">August 1999 to April 2001</p>
+				</aside>
+			    <p class="work-description">Oversaw from start to finish the design, planning, and execution of direct mail campaigns for over 30 journals. Designed advertisements, brochures, and inserts for journals and direct mail promotions.</p>
+			  </div>
+
+			<div class="position">
+				<h3 class="work-title">Membership Coordinator</h3>
+				<aside>
+					<p class="work-company"><a href="http://wbur.org/" target="_blank">WBUR 90.9 FM <span class="position-link">http://wbur.org/</span></a></p>
+					<p class="work-duration">February 1999 to August 1999</p>
+				</aside>
+			    <p class="work-description">Created database and maintained financial records for over 40,000 donors, assisted volunteers, furnished customer service, copywrote promotional pieces.</p>
+			  </div>
+
+			  <!-- template for positions
+			<div class="position">
+				<h3 class="work-title"></h3>
+				<aside>
+					<p class="work-company"><a href="" class="position-link" target="_blank"></a></p>
+					<p class="work-duration"></p>
+				</aside>
+			    <p class="work-description"></p>
+				<ul class="work-achievements">
+					<li>
+				</ul>
+			  </div>
+				-->
+
+			</div>
+
+			<div class="education-content">
+				<h2 class="section-heading">Education</h2>
+				<div class="education-period position">
+
+					<h3 class="education-title">Bachelor of Arts: Philosophy/History</h3>
+					<p class="education-duration">1993-2000</p>
+					<p class="education-location">University of Massachusetts at Amherst</p>
+				</div>
+
+				<div class="education-period position">
+					<h3 class="education-title">Graduate Courses in Computer Science</h3>
+					<p class="education-duration">2007-Present</p>
+					<p class="education-location">Harvard University: Extension School.</p>
+					<p class="education-description">A collection of courses (Data Structures, Discrete Math, Calculus, AI, etc.) mostly belonging to a Computer Science Master's curriculum.</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<footer class="content footer-content">
+		  <!--
+		  Still reading?  Pick up the <a href="tel:+16174290779">phone</a>. -->
+		</footer>
+	</div>
+
+</body>
+</html>
